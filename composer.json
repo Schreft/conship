@@ -1,0 +1,35 @@
+{
+    "name": "marcionunes/conship",
+    "description": "Generates a JavaScript file of your named Laravel Constants folder. Also provides a nice constant() helper function in JavaScript.",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Márcio Nunes",
+            "email": "marcionunesgouveia1@gmail.com"
+        }
+    ],
+    "license": "MIT",
+    "require": {},
+    "require-dev": {
+        "orchestra/testbench": "^6.25"
+    },
+    "autoload": {
+        "psr-4": {
+            "Marcionunes\\Conship\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Marcionunes\\Conship\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Marcionunes\\Conship\\ConshipServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
