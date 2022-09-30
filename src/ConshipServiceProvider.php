@@ -1,9 +1,9 @@
 <?php
 
-namespace Marcionunes\Conship;
+namespace Schreft\Conship;
 
 use Illuminate\Support\ServiceProvider;
-use Marcionunes\Conship\CommandConshipGenerator;
+use Schreft\Conship\CommandConshipGenerator;
 
 class ConshipServiceProvider extends ServiceProvider
 {

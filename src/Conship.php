@@ -1,6 +1,6 @@
 <?php
 
-namespace Marcionunes\Conship;
+namespace Schreft\Conship;
 
 use JsonSerializable;
 
@@ -16,19 +16,19 @@ class Conship implements JsonSerializable
     private function configurations($folder)
     {
         if ($folder)
-            return $this->folder;
+            return $folder;
 
         if (config()->has('conship.folder'))
             return config('conship.folder');
     }
 
     /**
-     * Convert this Ziggy instance to an array.
+     * Convert this instance to an array.
      */
     public function toArray(): array
     {
         return [
-            'file' => $this->folder,
+            'folder' => $this->folder,
         ];
     }
 

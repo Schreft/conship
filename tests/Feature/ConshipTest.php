@@ -1,7 +1,7 @@
 <?php
 
 use Orchestra\Testbench\TestCase;
-use Marcionunes\Conship\Conship;
+use Schreft\Conship\Conship;
 
 class ConshipTest extends TestCase
 {
@@ -14,6 +14,6 @@ class ConshipTest extends TestCase
 
         $data = $conship->toArray();
 
-        dd($data);
+        $this->assertArrayHasKey("folder", $data);
     }
 }

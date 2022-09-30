@@ -1,6 +1,6 @@
 <?php
 
-namespace Marcionunes\Conship;
+namespace Schreft\Conship;
 
 use Illuminate\Console\Command;
 use Illuminate\Filesystem\Filesystem;

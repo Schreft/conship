@@ -1,5 +1,5 @@
 {
-    "name": "marcionunes/conship",
+    "name": "schreft/conship",
     "description": "Generates a JavaScript file of your named Laravel Constants folder. Also provides a nice constant() helper function in JavaScript.",
     "type": "library",
     "authors": [
@@ -26,7 +26,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Marcionunes\\Conship\\ConshipServiceProvider"
+                "Schreft\\Conship\\ConshipServiceProvider"
             ]
         }
     },
