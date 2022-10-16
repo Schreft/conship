@@ -15,12 +15,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Marcionunes\\Conship\\": "src/"
+            "Schreft\\Conship\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Marcionunes\\Conship\\Tests\\": "tests/"
+            "Schreft\\Conship\\Tests\\": "tests/"
         }
     },
     "extra": {
@@ -31,5 +31,10 @@
         }
     },
     "minimum-stability": "stable",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "scripts": {
+        "test": [
+            "phpunit"
+        ]
+    }
 }

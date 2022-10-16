@@ -7,8 +7,8 @@ use Illuminate\Filesystem\Filesystem;
 
 class CommandConshipGenerator extends Command
 {
-    protected $signature = 'consts:generate
-                            {path=./resources/js/consts.js : Path to the generated JavaScript file.}';
+    protected $signature = 'conship:generate
+                            {path=./resources/js/constants.js : Path to the generated JavaScript file.}';
 
     protected $description = 'Generate a JavaScript file containing Constants from your php files.';
 
@@ -43,10 +43,10 @@ class CommandConshipGenerator extends Command
 
     private function generate()
     {
-        $conststojs = (new Conststojs());
+        $conship = (new conship());
 
-        $output = config('conststojs.output', File::class);
+        $output = config('conship.output', File::class);
 
-        return (string) new $output($conststojs);
+        return (string) new $output($conship);
     }
 }
